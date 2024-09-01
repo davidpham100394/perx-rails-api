@@ -10,7 +10,9 @@
 # Configuration parameters: CountComments, CountAsOne, AllowedMethods, AllowedPatterns.
 # AllowedMethods: refine
 Metrics/BlockLength:
-  Max: 60
+  Exclude:
+    - 'spec/**/*.rb'
+    - 'test/**/*.rb'
 
 # Offense count: 1
 # Configuration parameters: AllowedMethods, AllowedPatterns.
@@ -20,7 +22,7 @@ Metrics/CyclomaticComplexity:
 # Offense count: 2
 # Configuration parameters: CountComments, CountAsOne, AllowedMethods, AllowedPatterns.
 Metrics/MethodLength:
-  Max: 12
+  Max: 15
 
 # Offense count: 1
 # Configuration parameters: AllowedMethods, AllowedPatterns.

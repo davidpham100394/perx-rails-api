@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 require 'simplecov'
+require 'webmock/rspec'
+# Enable WebMock
+WebMock.disable_net_connect!(allow_localhost: true)
 SimpleCov.start do
   minimum_coverage 70 # Set minimum coverage percentage
 end

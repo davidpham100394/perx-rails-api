@@ -1,7 +1,12 @@
 # frozen_string_literal: true
 
 require 'simplecov'
-SimpleCov.start
+require 'webmock/rspec'
+# Disable real HTTP connections except for localhost
+WebMock.disable_net_connect!(allow_localhost: true)
+SimpleCov.start do
+  minimum_coverage 70 # Set minimum coverage percentage
+end
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
