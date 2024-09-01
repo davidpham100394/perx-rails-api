@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require 'simplecov'
 SimpleCov.start do
-  minimum_coverage 70  # Set minimum coverage percentage
+  minimum_coverage 70 # Set minimum coverage percentage
 end
 
 # frozen_string_literal: true
